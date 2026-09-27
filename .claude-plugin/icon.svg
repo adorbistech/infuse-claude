@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#070a12" />
+    </linearGradient>
+    <linearGradient id="cyanBlueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#60a5fa" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background container -->
+  <rect width="256" height="256" rx="56" fill="url(#bgGrad)" />
+  <rect width="254" height="254" x="1" y="1" rx="55" fill="none" stroke="#1e293b" stroke-width="2" />
+
+  <!-- Background subtle glow -->
+  <circle cx="128" cy="128" r="64" fill="#2563eb" opacity="0.25" filter="url(#glow)" />
+
+  <!-- Infuse Execution Core Symbol -->
+  <!-- Top Node / Beam -->
+  <circle cx="128" cy="62" r="14" fill="url(#accentGrad)" filter="url(#glow)" />
+  <circle cx="128" cy="62" r="8" fill="#ffffff" />
+
+  <!-- Central Fusion Hexagonal Ring -->
+  <path d="M 128 92 L 172 117 L 172 167 L 128 192 L 84 167 L 84 117 Z" 
+        fill="none" 
+        stroke="url(#cyanBlueGrad)" 
+        stroke-width="12" 
+        stroke-linejoin="round" 
+        stroke-linecap="round" />
+
+  <!-- Vertical Core Power Spine -->
+  <line x1="128" y1="80" x2="128" y2="176" 
+        stroke="url(#accentGrad)" 
+        stroke-width="10" 
+        stroke-linecap="round" />
+
+  <!-- Central Intelligence Core Node -->
+  <circle cx="128" cy="142" r="18" fill="#0f172a" stroke="url(#accentGrad)" stroke-width="6" />
+  <circle cx="128" cy="142" r="7" fill="#ffffff" filter="url(#glow)" />
+
+  <!-- Peripheral Orbital Nodes -->
+  <circle cx="84" cy="117" r="8" fill="#38bdf8" />
+  <circle cx="172" cy="117" r="8" fill="#38bdf8" />
+  <circle cx="84" cy="167" r="8" fill="#6366f1" />
+  <circle cx="172" cy="167" r="8" fill="#6366f1" />
+  <circle cx="128" cy="192" r="8" fill="#7c3aed" />
+</svg>

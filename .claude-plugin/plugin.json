@@ -1,0 +1,12 @@
+{
+  "name": "infuse",
+  "displayName": "Infuse",
+  "description": "Execution intelligence and governance for AI agent workflows.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Adorbis Tech",
+    "url": "https://adorbistech.com"
+  },
+  "homepage": "https://infuse.adorbistech.com",
+  "repository": "https://github.com/adorbistech/infuse-claude"
+}

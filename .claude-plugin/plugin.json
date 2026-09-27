@@ -8,5 +8,6 @@
     "url": "https://adorbistech.com"
   },
   "homepage": "https://infuse.adorbistech.com",
-  "repository": "https://github.com/adorbistech/infuse-claude"
+  "repository": "https://github.com/adorbistech/infuse-claude",
+  "privacyPolicyUrl": "https://infuse.adorbistech.com/legal"
 }
